@@ -1,0 +1,81 @@
+{
+  "web": [
+    "differentiate between static web pages and dynamic web pages",
+    "what is the use of post method in web programming",
+    "what is web server",
+    "explain the functions of an http web server"
+  ],
+  "datum": [
+    "what are the basic html data types",
+    "explain any two data types in php",
+    "explain about different data types in postgresql"
+  ],
+  "form": [
+    "how will you upload files using forms in html",
+    "explain how tables can be included in a html form",
+    "write down an html form and php file that contain the code for uploading a file"
+  ],
+  "operator": [
+    "mention relational operators and jogical operators in javaseript",
+    "explain logical operator in php",
+    "explain various type of operators in java script"
+  ],
+  "event": [
+    "when does onload event occur in javascript",
+    "explain any five event handling functions in javascript",
+    "describe any five event handling methods in java script",
+    "explain on load event with example"
+  ],
+  "server": [
+    "what is server side scripting",
+    "what is web server",
+    "explain the functions of an http web server"
+  ],
+  "css": [
+    "write notes on css lists and css tables with examples",
+    "explain the different ways to include the css with html",
+    "what is css",
+    "explain the type of css in html"
+  ],
+  "post": [
+    "compare get method and post method in php",
+    "what is the use of post method in web programming",
+    "explain the difference between get and post methods in php",
+    "explain the post method in php with an example"
+  ],
+  "string": [
+    "write and explain any five string functions used in php",
+    "explain any two string handling functions in php",
+    "explain about various string handling functions in php",
+    "explain about various string handling functions in php",
+    "explain string replacement  in php"
+  ],
+  "ajax": [
+    "what is ajax",
+    "how did you implement ajax in php",
+    "what is ajax",
+    "what is ajax",
+    "explain implementation procedure of ajax in php"
+  ],
+  "document": [
+    "describe document structure in html",
+    "explain document objects in javascript with its properties and methods",
+    "describe the steps for adding graphics to html document with suitable examples"
+  ],
+  "structure": [
+    "describe document structure in html",
+    "describe the text structure tags and attribute in html",
+    "describe text structure tags and attributes in html"
+  ],
+  "tag": [
+    "what is the use of font tag in html",
+    "what are the tags in the head section of an html page",
+    "describe the text structure tags and attribute in html",
+    "describe text structure tags and attributes in html"
+  ],
+  "mysql": [
+    "explain the features of mysql",
+    "write down the steps for connecting the mysql with php",
+    "describe mysql operations"
+  ]
+}

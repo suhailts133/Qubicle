@@ -1,0 +1,72 @@
+<!-- base/templates/home.html -->
+{% extends 'main.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+
+{% block content %} 
+
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">  {# Include the CSS file #}
+  <div class="introduction text-center mt-5">
+    <h2 class="mb-4">Welcome to <span class="text-success">Qubicle</span>!</h2>
+    <p class="lead">
+      Qubicle is a powerful study tool designed to help students extract important questions and topics from previous year question papers. Simply upload your question papers, and let Qubicle analyze and provide you with valuable insights for effective exam preparation.
+    </p>
+    <br>
+    <span><p>1. Upload the Question Papers You have</p></span>
+    <span><p>2. Click the process image button to process images</p></span>
+    <span><p>3. Click the result button to see the important Topics and Questions</p></span>
+    <span><p style="color: rgb(150, 42, 42);">4. Before Checking Again please Click the Check Again Button</p></span>
+  </div>
+  
+  <div class="container mt-5">
+    {% if messages %}
+      {% for message in messages %}
+        <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}" role="alert" id="successMessage">
+          {{ message }}
+        </div>
+      {% endfor %}
+    {% endif %}
+    
+    <!-- Card for Image Upload Form -->
+    <div class="card">
+      <div class="card-body">
+        
+        <form id="uploadForm" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+          {% csrf_token %}
+          <div class="mb-3">
+            {{ form.as_p }}
+          </div>
+          <button type="submit" class="btn btn-success">Upload Image</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Process Images Button -->
+    <button type="button"  id="processImages" data-sm-link-text="Images">
+      <span>Process</span>
+    </button>
+
+    <!-- View Cleaned JSON Button -->
+    <button type="button" class="fancy" id="viewJsonButton" >
+      <a href="{% url 'view_cleaned_json' %}">Result</a>
+      <span class="top-key"></span>
+    </button>
+    
+<form action="{% url 'delete_all_data' %}" method="post">
+  {% csrf_token %}
+  <button type="submit" class="btn btn-outline-danger">Check Again</button>
+</form>
+
+
+  </div>
+  <div id="warningMessage" class="alert alert-dismissible alert-warning" style="display: block; border-radius: 10px; margin-top: 20px; margin-bottom: 20px;">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <h4 class="alert-heading" style="font-weight: bold;">Warning!</h4>
+    <p style="margin-bottom: 0;">The output result may not be completely accurate. The accuracy will depend upon the quality of the image and the number of images you are uploading.</p>
+  </div>
+  
+  <!-- Add this script at the end of your HTML file -->
+  <script src="{% static 'js/home.js' %}"></script>
+{% endblock content %}

@@ -1,0 +1,20 @@
+{
+  "web_server": "what is web server",
+  "datum": "explain any two data types in php",
+  "html": "what is html",
+  "form": "how will you upload files using forms in html",
+  "operator": "explain various type of operators in java script",
+  "event": "explain any five event handling functions in javascript",
+  "javascript": "what is javascript",
+  "php": "what is php",
+  "statement": "what are the different conditional statements and looping statements used in php",
+  "function": "write short note on functions in java script",
+  "css": "what is css",
+  "post": "explain the post method in php with an example",
+  "string": "write and explain any five string functions used in php",
+  "postgresql": "what is postgresql",
+  "ajax": "what is ajax",
+  "document_structure": "describe document structure in html",
+  "tag": "what is the use of font tag in html",
+  "mysql": "explain the features of mysql"
+}

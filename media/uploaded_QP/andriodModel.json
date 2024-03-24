@@ -1,0 +1,154 @@
+{
+  "avd": [
+    "what is an avd",
+    "what is avd",
+    "what is an avd",
+    "what is an avd",
+    "what is an avd"
+  ],
+  "allocate": [
+    "what the connection between resourcereference syntax and allocating ids for ul controls",
+    "what is the connection between resourcereference syntax and allocating ids for ui controls",
+    "what is the connection between resourcereference syntax and allocating ds for ui controls"
+  ],
+  "connection": [
+    "what the connection between resourcereference syntax and allocating ids for ul controls",
+    "what is the connection between resourcereference syntax and allocating ids for ui controls",
+    "what is the connection between resourcereference syntax and allocating ds for ui controls"
+  ],
+  "resourcereference": [
+    "what the connection between resourcereference syntax and allocating ids for ul controls",
+    "what is the connection between resourcereference syntax and allocating ids for ui controls",
+    "what is the connection between resourcereference syntax and allocating ds for ui controls"
+  ],
+  "syntax": [
+    "what the connection between resourcereference syntax and allocating ids for ul controls",
+    "what is the connection between resourcereference syntax and allocating ids for ui controls",
+    "what is the connection between resourcereference syntax and allocating ds for ui controls"
+  ],
+  "cursor": [
+    "what is android cursor",
+    "what is a cursor",
+    "how do you walk through a cursor"
+  ],
+  "item": [
+    "what callback method is used to create menu items",
+    "what are the attributes of menu item",
+    "explain how to respond to xmlbased menu items",
+    "write a java code for adding items to list view",
+    "how to respond to menu items"
+  ],
+  "share": [
+    "what is shared preference",
+    "how to save and retrieve shared preferences",
+    "write a brief note on list preferences and shared preferences",
+    "how to save and load shared preferences",
+    "how to save and load shared preferences"
+  ],
+  "spinner": [
+    "explain spinner control and its purpose by giving suitable example",
+    "how is a spinner different from the other list controls",
+    "how is a spinner different from the other list controls",
+    "how is a spinner different from the other list controls"
+  ],
+  "software": [
+    "explain android sdk software stack with appropriate diagram",
+    "explain android software stack",
+    "explain android software stack",
+    "explain android software stack with a diagram"
+  ],
+  "stack": [
+    "explain android sdk software stack with appropriate diagram",
+    "explain android software stack",
+    "explain android software stack",
+    "explain android software stack with a diagram"
+  ],
+  "sqllite": [
+    "what is sqllite",
+    "explain insert update and delete commands in sqllite with suitable examples",
+    "explain database manipulation using sqllite",
+    "what doyou meant by sqllite"
+  ],
+  "ui": [
+    "what is androids basic ui building blocks",
+    "what is the connection between resourcereference syntax and allocating ids for ui controls",
+    "explain the layout managers in android ui development with code snippet",
+    "what is the connection between resourcereference syntax and allocating ds for ui controls",
+    "explain the layout managers in android ui development with code snippet"
+  ],
+  "class": [
+    "what is the parent class of fragment",
+    "what is the role of the content values class and content resolver class",
+    "what is so important about the commit  method of the editor class",
+    "what is the role of the content values class and content resolver class",
+    "what is the role of the contentvalues class and contentresolver class"
+  ],
+  "manager": [
+    "write a bri f note on grid layout manager",
+    "explain the layout managers in android u development",
+    "explain the layout managers in android ui development with code snippet",
+    "explain the layout managers in android ui development with code snippet",
+    "write short notes on different layout managers"
+  ],
+  "activity": [
+    "write a short note on view activity fragment and intent",
+    "differentiate fragment and an activity in android",
+    "illustrate the linking of activities using intent with an example",
+    "how to kill an activity in android"
+  ],
+  "application": [
+    "write a detailed note on android application life cycle",
+    "explain the structure of android application",
+    "illustrate how to establish database connectivity to an android application",
+    "illustrate how to establish database connectivity to an android application"
+  ],
+  "role": [
+    "what is the role of the content values class and content resolver class",
+    "what is the role of the content values class and content resolver class",
+    "what is the role of the contentvalues class and contentresolver class"
+  ],
+  "actiongetcontent": [
+    "what is the difference between actionpick and actiongetcontent",
+    "what is the difference between actionpick and actiongetcontent",
+    "what is the difference between actionpick and actiongetcontent"
+  ],
+  "actionpick": [
+    "what is the difference between actionpick and actiongetcontent",
+    "what is the difference between actionpick and actiongetcontent",
+    "what is the difference between actionpick and actiongetcontent"
+  ],
+  "development": [
+    "explain the layout managers in android u development",
+    "explain the layout managers in android ui development with code snippet",
+    "explain the layout managers in android ui development with code snippet"
+  ],
+  "database": [
+    "explain database manipulation using sqllite",
+    "illustrate how to establish database connectivity to an android application",
+    "illustrate how to establish database connectivity to an android application"
+  ],
+  "component": [
+    "explain the fundamental components of adt",
+    "how to create a linear layout with view components",
+    "explain the fundamental components of adt",
+    "how to create a linear layout with view components"
+  ],
+  "xml": [
+    "what two main tags are used in a preference xml file to set up headers",
+    "how to load menu through xml",
+    "how to load menus through xml files"
+  ],
+  "provider": [
+    "explain the architecture of content providers",
+    "what are content providers",
+    "explain the architecture of content providers",
+    "what are content providers",
+    "explain in detail about content providers"
+  ],
+  "load": [
+    "how to save and load shared preferences",
+    "how to load menu through xml",
+    "how to save and load shared preferences",
+    "how to load menus through xml files"
+  ]
+}

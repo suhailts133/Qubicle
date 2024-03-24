@@ -1,0 +1,35 @@
+{% extends 'main.html' %}
+
+{% load custom_filters %}
+{% block title %}Inventory{% endblock title %}
+
+
+{% block content %} 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<div class="container mt-5">
+   
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>File Name</th>
+                <th colspan="2">Action</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            {% for json_file in json_files %}
+            <tr>
+                <td >{{ json_file.file.name|filename }}</td>
+                <td ><a href="{% url 'display_json_content' json_file.file.name|filename %}" >Important Questions</a></td>
+                <td><a href="{% url 'model_qp_stored' json_file.file.name|filename %}" >Model qp</a></td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="3">No JSON files uploaded yet.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock content %}

@@ -1,0 +1,36 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block title %}Model Question paper{% endblock title %}
+
+{% block content %} 
+    <div class="container">
+        <h1>Model Questions Paper</h1>
+
+        {% if random_questions %}
+            <ol type="1">
+            {% for question in random_questions %}
+                <li>{{ question }}</li>
+            {% endfor %}
+            </ol>
+        {% else %}
+            <p>No questions available.</p>
+        {% endif %}
+
+        <button id="change-questions">Change Questions</button>
+        <div id="warningMessage" class="alert alert-dismissible alert-warning" style="display: block; border-radius: 10px; margin-top:  5px; margin-bottom: 20px;">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <h4 class="alert-heading" style="font-weight: bold;">Warning!</h4>
+            <p style="margin-bottom: 0;">I apologize if there are any spelling mistakes in the questions above; this may be due to poor image quality or issues with text recognition</p>
+          </div>
+    </div>
+
+    <script>
+        document.getElementById("change-questions").addEventListener("click", function() {
+            // Reload the page to fetch new questions
+            location.reload();
+        });
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/model.css' %}">
+{% endblock content %}

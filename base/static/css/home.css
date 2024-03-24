@@ -1,0 +1,189 @@
+/* static/css/home.css */
+
+/* Style for the container */
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Style for alerts inside the container */
+.container .alert {
+  margin-top: 10px;
+}
+
+/* Style for the form inside the container */
+.container #uploadForm {
+  margin-top: 20px;
+}
+
+/* Style for buttons inside the container */
+.container .btn {
+  margin-top: 10px;
+}
+
+/* Optional: Style for the form fields inside the container */
+.container #uploadForm input[type="file"] {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Optional: Style for the submit button inside the container */
+.container #uploadForm button[type="submit"] {
+  width: 100%;
+}
+
+/* Style for the Upload Image button before hovering */
+.container #uploadForm button[type="submit"] {
+  background-color: transparent;
+  color: #1c1d22;
+  border: 2px solid #1c1d22;
+}
+
+/* Style for the Upload Image button on hover */
+.container #uploadForm button[type="submit"]:hover {
+  background-color: #1c1d22;
+  color: white;
+  border: 2px solid white;
+}
+
+
+.container #viewJsonButton {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  background-color: transparent;
+  border: 2px solid #1c1d22;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: .05em;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 0.75em 1.5em; /* Adjust padding to make it smaller */
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all .3s ease-in-out;
+  user-select: none;
+  width: 12.8125rem; /* Adjust width to make it smaller */
+}
+
+.container #viewJsonButton::before {
+  content: " ";
+  width: 1.5625rem;
+  height: 2px;
+  background: #1c1d22;
+  top: 50%;
+  left: 1.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform-origin: center;
+  transition: background 0.3s linear, width 0.3s linear;
+}
+
+.container #viewJsonButton a {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  padding-left: 2em;
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1c1d22;
+}
+
+.container #viewJsonButton .top-key {
+  height: 2px;
+  width: 1.5625rem;
+  top: -2px;
+  left: 0.625rem;
+  position: absolute;
+  background: white;
+  transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.container #viewJsonButton:hover {
+  color: white;
+  background: #1c1d22;
+}
+
+.container #viewJsonButton:hover::before {
+  width: 0.9375rem;
+  background: white;
+}
+
+.container #viewJsonButton:hover a {
+  color: white;
+  padding-left: 1.5em;
+}
+
+.container #viewJsonButton:hover .top-key {
+  left: -2px;
+  width: 0px;
+}
+
+.container #processImages {
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 10px; /* Adjust margin-top as needed */
+
+  /* Style for the button background */
+  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+  display: var(--uismLinkDisplay);
+  color: #000;
+  outline: solid 2px #000;
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+
+.container #processImages::before,
+.container #processImages span {
+  margin: 0 auto;
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  transition-duration: 0.4s;
+}
+
+/* Style for button background when hovered */
+.container #processImages:hover {
+  background-color: #000;
+}
+
+/* Style for text when button is hovered */
+.container #processImages:hover span {
+  -webkit-transform: translateY(-400%) scale(-0.1, 20);
+  transform: translateY(-400%) scale(-0.1, 20);
+}
+
+/* Style for the second text on button */
+.container #processImages::before {
+  content: attr(data-sm-link-text);
+  color: #FFF;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translateY(500%) scale(-0.1, 20);
+  transform: translateY(500%) scale(-0.1, 20);
+}
+
+/* Style for the second text when button is hovered */
+.container #processImages:hover::before {
+  letter-spacing: 0.05em;
+  -webkit-transform: translateY(0) scale(1, 1);
+  transform: translateY(0) scale(1, 1);
+}

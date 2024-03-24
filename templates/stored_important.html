@@ -1,0 +1,24 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block title %}JSON Content{% endblock title %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/result.css' %}">
+<div class="container mt-5">
+    <h1 class="mb-4">Important Questions</h1>
+    <div>
+        <h2>Topics</h2>
+        <ul>
+            {% for topic, question in json_data.items %}
+                <li>
+                    <strong>{{ topic }}</strong>: {{ question }}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div id="warningMessage" class="alert alert-dismissible alert-warning" style="display: block; border-radius: 10px; margin-top:  5px; margin-bottom: 20px;">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <h4 class="alert-heading" style="font-weight: bold;">Warning!</h4>
+        <p style="margin-bottom: 0;">I apologize if there are any spelling mistakes in the questions above; this may be due to poor image quality or issues with text recognition</p>
+      </div>
+</div>
+{% endblock content %}
