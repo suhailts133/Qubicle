@@ -130,8 +130,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+UPLOADED_IMAGES_DIR = os.path.join(MEDIA_ROOT, 'uploaded_images')
+if not os.path.exists(UPLOADED_IMAGES_DIR):
+    os.makedirs(UPLOADED_IMAGES_DIR)
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
